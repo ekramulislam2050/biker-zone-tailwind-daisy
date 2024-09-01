@@ -46,11 +46,19 @@
         .hero-bg {
             background: rgb(253, 240, 237);
         }
+
+        .text-color {
+            color: rgb(238, 155, 134);
+        }
+
+        .hr-bg {
+            background-color: rgb(238, 155, 134);
+        }
     </style>
 </head>
 
 <body>
-    <div class="w-11/12 mx-auto">
+    <div class="  w-11/12 mx-auto">
         <header class="header-font">
             <!-- nav start----------- -->
             <nav class="py-5">
@@ -87,17 +95,17 @@
                 </div>
             </nav>
             <!-- hero section start---------------- -->
-            <section>
-                <div class="grid lg:grid-cols-2  hero-bg ">
+            <section class="pl-5 pr-2  ">
+                <div class="grid lg:grid-cols-2 hero-bg ">
                     <!-- description of carousel-img---------------- -->
                     <div class="   ">
-                        <div class="pl-24 pt-40">
-                            <h2 class="text-5xl font-extrabold">Ride-on R15 V4 <br> with Smile</h2>
+                        <div class="lg:pl-24 lg:pt-40 px-8 pt-20">
+                            <h2 class="lg:text-5xl text-4xl font-extrabold pb-5">Ride-on R15 V4 <br> with Smile</h2>
                             <p class="font-light py-8">Amet minim mollit non deserunt ullamco <br>
                                 est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.
                             </p>
                         </div>
-                        <div class="pl-24">
+                        <div class="lg:pl-24 px-8">
                             <a class="btn font-normal text-xl text-white btn-bg px-9">Login</a>
                         </div>
 
@@ -142,8 +150,31 @@
                 </div>
             </section>
         </header>
-        <main>
+        <main class="main-font">
+            <!-- feature of bikes ---------------------- -->
+            <section class="my-20">
+                <div class="text-center">
+                    <h2 class="text-4xl lg:text-5xl font-bold px-5">Fetured Bikes In This Year</h2>
+                    <div class="mb-10">
+                        <b class="text-color block pt-2 pb-1">Best bike collection</b>
+                        <hr class="hr-bg h-1 w-1/12 mx-auto hover:bg-blue-500 ">
+                    </div>
+                </div>
+                <div>
+                    <div class=" grid sm:grid-cols-3 lg:grid-rows-1">
+                        <div class="w-full mx-auto mt-10 mb-5 px-5 ">
+                            <img src="./assets/others/feature-bike.png " class="w-full  ">
+                        </div>
+                        <div class="w-full mx-auto my-5  px-5 ">
+                            <img src="./assets/others/feature-bike.png" class="w-full">
+                        </div>
+                        <div class="w-full mx-auto mt-10 mb-5  px-5 ">
+                            <img src="./assets/others/feature-bike.png" class="w-full">
+                        </div>
+                    </div>
+                </div>
 
+            </section>
         </main>
     </div>
 
